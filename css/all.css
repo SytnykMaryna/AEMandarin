@@ -1,0 +1,463 @@
+
+html {-webkit-text-size-adjust: none; overflow-x: hidden;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, rem, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, rembed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+input, textarea, select {
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+*:focus {outline: none;}
+input::-webkit-input-placeholder{color:#bebebe;}
+input:focus::-webkit-input-placeholder{color:#bebebe;}
+/***************************************************              GENERAL STYLES             ***************************************************/
+
+* {
+	font-family: 'LatoWeb',sans-serif;
+}
+/****************************************************           PC - LARGE          *************************************************/
+@media (min-width: 1218px) and (max-width: 10000px) {}
+
+.content {
+  min-height: calc(100vh - 340px);
+}
+
+.layout {
+	margin:0 auto;
+	width:1170px;
+}
+footer {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0;
+}
+main {
+	overflow:hidden;
+	display:block;
+	width:100%;
+	position: relative;
+	z-index: 0;
+}
+header {
+	width:100%;
+	display:block;
+	position:relative;
+}
+
+
+/***************     header    ***************/
+
+
+header {
+	height: 85vh;
+	background-image: url('../images/headerBackground.jpg');
+	background-origin: border-box ;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+header .hamburger {
+	position: absolute;
+	top: 20px;
+    right: 20px;
+    display: none ;
+}
+
+header h1 {
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+
+	font-size: 4rem;
+	font-family: 'Akzidenz-Grotesk Pro';
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.02rem;
+}
+
+header h1 span {
+	font-family: 'Akzidenz-Grotesk Pro';
+	color: #ebb885;
+}
+
+.header__top{
+	display: flex;
+	padding: 2.13%;
+}
+
+.logo {
+	flex: 1;
+ }
+
+ .menu {
+	flex: 4;
+ }
+
+ .menu {
+ 	display: block;
+ 	text-align: center;
+ }
+
+ .menu li {
+ 	display: inline-block;
+ 	margin: 0 3.46% ;
+ }
+
+ .menu li a {
+ 	color: #fff;
+ 	height: 82px;
+ 	line-height: 82px;
+    font-size: 1.3rem;
+    cursor: pointer;
+ }
+
+.menu li a:hover {
+	color: #ebb885;
+	border-bottom: 2px solid #ebb885;
+}
+
+
+/***************     main     ***************/
+
+main {
+	background-color: #f0f0f0;
+}
+
+.main__about {
+	background-color: #fff;
+	text-align: center;
+	margin: 105px 0;
+}
+
+.main__about h1 {
+	font-size: 3.5rem;
+	padding: 30px 0;
+	color: #322454
+}
+
+.main__about_content {
+	display: flex;
+	color: #261304;
+	padding-bottom: 35px;
+}
+
+.main__about_content  section {
+	margin: 2%;
+	width: calc(100% / 3  - 4%);
+
+	height: auto;
+	padding: 0 1%;
+}
+
+.main__about_content p,
+.main__aim_info p,
+.main__aim_we p {
+	font-size: 1.3rem;
+	text-align: left;
+	word-spacing: 0.3rem;
+}
+
+.main__aim {
+	display: flex;
+	background-color: #fff;
+	text-align: center;
+	margin: 105px 0;
+}
+
+.main__aim h1,
+.portfolio h1 {
+	font-size: 3.5rem;
+	padding: 30px 0;
+	color: #322454;
+}
+
+.main__aim img {
+	height: auto;
+}
+
+.main__aim_we,
+.main__aim_info {
+	flex: 1;
+	margin: 2%;
+	width: calc(100% / 2  - 4%);
+}
+
+.portfolio {
+	background-color: #fff;
+	text-align: center;
+	margin: 105px 0;
+	padding: 45px;
+}
+
+
+.icon {
+	display: flex;
+	justify-content: center;
+}
+
+.icon img {
+	margin: 0 5%;
+	width: calc(100% / 3 - 10%);
+}
+
+footer {
+	background-image: url('../images/footer1.jpg');
+	background-origin: border-box ;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 340px;
+	text-align: center;
+}
+
+
+footer h1 {
+	font-size: 3.5rem;
+	color: #fff;
+	padding: 30px 0;
+	font-family: 'LatoWeb',sans-serif;
+}
+
+.contacts {
+	display: flex;
+}
+
+.phone,
+.email {
+	margin: 2.5%;
+	width: calc(100% / 2  - 5%);
+}
+
+.phone a,
+.email a {
+	display: block;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+
+/****************************************************************              PC              ***************************************************/
+@media (min-width: 978px) and (max-width: 1217px) {
+	.layout {
+		margin:0 auto;
+		width: 970px;
+	}
+
+	header h1 {
+  		font-size: 3.3rem;
+  	}
+
+  	.menu li {
+ 		margin: 0 3% ;
+ 	}
+
+  	.main__about h1,
+	.main__aim h1,
+	.portfolio h1,
+	footer h1 {
+		font-size: 2.5rem;
+	}
+
+}
+/****************************************************************              TABLET              ***********************************************/
+@media (min-width: 768px) and (max-width: 977px) {
+	.layout {
+		margin:0 auto;
+		width:768px;
+	}
+
+	header h1 {
+	  	font-size: 2.6rem;
+  	}
+
+  	.menu li {
+ 		margin: 0 2.2% ;
+ 	}
+
+	.main__about h1,
+	.main__aim h1,
+	.portfolio h1,
+	footer h1 {
+		font-size: 2rem;
+	}
+
+	.main__about_content p,
+	.main__aim_info p,
+	.main__aim_we p {
+		font-size: 1.2rem;
+	}
+
+	.main__about_content  section {
+		margin: 1.5%;
+		width: calc(100% / 3 - 3%);
+	}
+
+	.main__aim_we,
+	.main__aim_info {
+		margin: 1.5%;
+		width: calc(100% / 2 - 3%);
+	}
+
+
+}
+/****************************************************************              MOBILE              ***********************************************/
+@media (min-width: 320px) and (max-width:767px) {
+	.layout {
+		width:100%;
+		padding:0;
+	}
+
+	.logo {
+		max-width: 50px;
+    	width: 100%;
+    	height: 50px;
+ 	}
+
+	header {
+		height: 35vh;
+	}
+
+	header h1 {
+		font-size: 1.1rem;
+  		left: 50%;
+  		top: 15%;
+  		transform: translate(-50%, -15%);
+	}
+
+	header .hamburger {
+    	display: block ;
+	}
+	
+	.menu {
+		display: none;
+	}
+
+	.menuop {
+		display: block ;
+		position: absolute;
+		right: 20px;
+		top: 55px;
+	}
+
+	.menu li {
+		display: block;
+		margin: 10px 0;
+
+	}
+
+	.menu li a {
+	 	height: 16px;
+	 	line-height: 16px;
+	    font-size: 0.9rem;
+	    cursor: pointer;
+	}
+
+	.menu li a:hover {
+		border-bottom: 1px solid #ebb885;
+	}
+	
+	.main__about h1,
+	.main__aim h1,
+	.portfolio h1,
+	footer h1 {
+		font-size: 1.5rem;
+	}
+
+	.main__about_content p,
+	.main__aim_info p,
+	.main__aim_we p,
+	.phone a,
+	.email a {
+		font-size: 1rem;
+		word-spacing: normal;
+		padding: 0 4%;
+	}
+
+	.main__aim,
+	.main__about_content,
+	.contacts {
+		flex-direction: column ;
+	}
+
+	.main__aim {
+		height: 650px;
+	}
+
+	.main__about_content section,
+	.main__aim_we,
+	.main__aim_info {
+		margin: 0px 2% 30px;
+		width: 100%;
+	}
+
+	.main__about,
+	.main__aim,
+	.portfolio {
+		margin: 55px 0 25px;
+	}
+
+	.main__aim img {
+		display: none;
+	}
+
+	.icon {
+		flex-direction: column;
+	}
+
+	.icon img {
+		max-width: 200px;
+    	width: 100%;
+    	height: 80px;
+    	margin: 20px auto;
+	}
+
+	.contacts {
+		align-items: center;
+	}
+
+	.phone,
+	.email {
+		margin: 2.5% 0 ;
+		line-height: 2rem;
+		width: 80%;
+	}
+}
